@@ -1,0 +1,111 @@
+.dashboard {
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  position: absolute;
+}
+
+.dashboardContainer {
+  border-left: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: #14001D;
+  padding: 3rem 0;
+}
+
+.dashboardContainer > h1 {
+  color: #E6E6FA;
+  font: 300 2rem "Roboto";
+  text-align: center;
+  width: 30%;
+  padding: 1rem;
+  margin: auto;
+  /* background:linear-gradient(to right , #14001D, #ff02af,#14001D); */
+  border-bottom: .2rem solid #ff02af;
+  
+  
+}
+
+.dashboardSummary {
+  margin: 2rem 0;
+}
+
+.dashboardSummary > div {
+  display: flex;
+  background-color:#14001D;
+  justify-content: center;
+  
+}
+.dashboardSummary > div > p {
+  color:#E6E6FA;
+  font: 300 1.3rem "Roboto";
+  text-align: center;
+  padding: 1.5rem;
+  width: 55%;
+  margin: 0 2rem;
+  /* box-shadow: inset 0px 0px 30px 2px rgb(183, 0, 255); */
+  box-shadow: 0px 0px 10px 4px rgb(183, 0, 255);
+}
+.dashboardSummaryBox2 > a {
+  color: #E6E6FA;
+  font: 300 2rem "Roboto";
+  text-align: center;
+  text-decoration: none;
+  padding: 1.5rem;
+  width: 10vmax;
+  height: 10vmax;
+  margin: 2rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(183, 0, 255);
+  box-shadow: inset 0px 0px 30px 2px rgb(183, 0, 255);
+  
+}
+
+.dashboardSummaryBox2 > a:first-child {
+  color: #E6E6FA;
+  border: 1px solid #FF008A;
+  box-shadow: inset 0px 0px 30px 2px #FF008A;
+
+}
+
+.dashboardSummaryBox2 > a:last-child {
+  color: #E6E6FA;
+  border: 1px solid #FF008A;
+  box-shadow: inset 0px 0px 30px 2px #FF008A;
+}
+
+
+.lineChart {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 3rem;
+}
+
+.doughnutChart {
+  width: 30vmax;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardContainer {
+    border-left: none;
+  }
+
+  .dashboardSummary > div > p {
+    margin: 0;
+  }
+
+  .dashboardSummaryBox2 > a {
+    padding: 0.5rem;
+    margin: 1rem;
+    font: 300 0.9rem "Roboto";
+  }
+}

@@ -1,0 +1,16 @@
+.MuiStepConnector-line {
+  display: none !important;
+  
+}
+.MuiTypography-displayBlock > p{
+  color: #E6E6FA;
+}
+.MuiStepConnector-root {
+  height: 1px;
+  background-color: #FF008A;
+}
+
+.MuiStepConnector-active,
+.MuiStepConnector-completed {
+  background-color: #FF008A;
+}

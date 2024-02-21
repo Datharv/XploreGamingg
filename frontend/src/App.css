@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    cursor: url("./images/cursor.png"), auto;
+    background-color: #14001D;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.greenColor {
+    color: rgb(0, 255, 0) !important;
+}
+
+.redColor {
+    color: rgb(255, 0, 0) !important;
+}
