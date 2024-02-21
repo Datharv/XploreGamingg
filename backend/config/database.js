@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDatabase = () => {
   mongoose
-    .connect("mongodb+srv://nextjs13:next@cluster0.2e6vfnj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/Ecommerces", {
+    .connect("mongodb://127.0.0.1:27017/Ecommerce", {
       dbName: "Ecommerce",
       useNewUrlParser: true,
       useUnifiedTopology: true,

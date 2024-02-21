@@ -32,7 +32,7 @@ app.use(fileUpload());
 const product = require("./routes/productRoute");
 const user = require("./routes/userRoute");
 const order = require("./routes/orderRoute");
-const payment = require("./routes/paymentRoute");S
+const payment = require("./routes/paymentRoute");
 // Static files
 // app.use(express.static(path.join(__dirname, "../frontend/build")));
 
