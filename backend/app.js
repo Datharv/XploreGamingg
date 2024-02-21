@@ -12,7 +12,9 @@ const errorMiddleware = require("./middlewares/error.js");
 const dotenv = require("dotenv");
 const path = require("path");
 
-app.use(cors());
+app.use(cors(
+
+));
 
 // config
 dotenv.config({
@@ -30,10 +32,9 @@ app.use(fileUpload());
 const product = require("./routes/productRoute");
 const user = require("./routes/userRoute");
 const order = require("./routes/orderRoute");
-const payment = require("./routes/paymentRoute");
-
+const payment = require("./routes/paymentRoute");S
 // Static files
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+// app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 // app.get("*", (req, res) => {
 //   res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
