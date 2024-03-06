@@ -12,9 +12,11 @@ const errorMiddleware = require("./middlewares/error.js");
 const dotenv = require("dotenv");
 const path = require("path");
 
-app.use(cors(
 
-));
+const corsOptions = {
+  origin: "http://localhost:3000", // frontend URI (ReactJS)
+};
+app.use(cors(corsOptions));
 
 // config
 dotenv.config({
